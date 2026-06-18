@@ -16,10 +16,7 @@ name: Convex Deploy
 # Deploy Keys → "Production: deploy" scope.
 
 on:
-  push:
-    branches: [main]
-  # Manual fallback so the operator can re-run a deploy without a code change
-  # (e.g. recover from a failed deploy or push a hotfix off-cycle).
+  # Manual-only — requires CONVEX_DEPLOY_KEY secret to be configured.
   workflow_dispatch:
 
 permissions:

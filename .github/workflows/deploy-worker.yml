@@ -11,11 +11,6 @@ name: Deploy api-cors-preflight Worker
 #   CLOUDFLARE_ACCOUNT_ID — CF account that owns the Worker.
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'workers/api-cors-preflight/**'
-      - '.github/workflows/deploy-worker.yml'
   workflow_dispatch:
 
 permissions:
